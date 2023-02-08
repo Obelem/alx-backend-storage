@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+echo "DROP TABLE users;" | sudo mysql -uroot holberton
