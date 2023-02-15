@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 ''' write strings to Redis '''
-from redis import Redis
+import redis
 from typing import Union, Callable, Optional
 from uuid import uuid4
 
@@ -11,7 +11,7 @@ class Cache:
     def __init__(self):
         """init redis
         """
-        self._redis = Redis()
+        self._redis = redis.Redis()
         self._redis.flushdb()
 
     def store(self, data: Union[str, bytes, int, float]) -> str:
