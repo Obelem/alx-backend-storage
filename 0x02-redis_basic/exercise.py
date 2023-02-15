@@ -9,6 +9,8 @@ class Cache():
     """redis basics"""
 
     def __init__(self):
+        """init redis
+        """
         self._redis = Redis()
         self._redis.flushdb()
 
