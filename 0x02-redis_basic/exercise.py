@@ -5,7 +5,7 @@ from typing import Union, Callable, Optional
 from uuid import uuid4
 
 
-class Cache():
+class Cache:
     """redis basics"""
 
     def __init__(self):
